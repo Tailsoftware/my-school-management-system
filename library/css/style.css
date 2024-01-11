@@ -1,0 +1,227 @@
+*::-webkit-scrollbar{
+ width: 0px;
+}
+.full-vh{
+    height: 100vh;
+}
+.profilepic{
+    width: 2cm;
+    height: 2cm;
+    border-radius: 50%;
+}
+.profilepic img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.linksa{
+    text-transform: capitalize;
+    color: black;
+}
+.linksa:hover{
+    background-color: rgb(18, 18, 112);
+}
+
+.sh .card{
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-left:15px solid rgba(128, 128, 128, 0.493) ;
+    text-align: center;
+
+   
+}
+.sh div a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    
+}
+.sh div a h3{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+
+}
+.y{
+    font-weight: 600;
+}
+.profilepic img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.drop{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+.drop li{
+    height: .5cm;
+    list-style: none;
+    width: 100%;
+
+}
+.drop li:last-child{
+    border-radius: 0px 0px 10px 10px;
+
+}
+.linksa{
+    position: relative;
+}
+.linksa:hover:after{
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 3px;
+    background-color: blue;
+
+}
+.popperpicture img{
+    width: 80%;
+    height: 80%;
+    display: block;
+    position: relative;
+}
+.notify i{
+    font-size: .5cm;
+    position: relative;
+}
+.afternoti{
+    position: absolute;
+    min-width: 20px;
+    min-height: 10px;
+    bottom: 0;
+    right: -20px;
+    font-size: smaller;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.img-responsive{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.h{
+ right: 10vw;
+ top: 5px;
+ width:60%;
+ position: fixed;
+ 
+}
+
+.tablem{
+    margin-top: 20px;
+    width: 90%;
+}
+.tablem tr{
+}
+.tablem :nth-child(odd){
+    background-color: rgba(128, 128, 128, 0.103);
+}
+.tablem td{
+    border: 1px solid gray;
+   min-width: 3.5cm;
+   max-width: 3.5cm;
+   padding-left: 10px;
+   overflow-x: scroll;
+}
+.table-responsive{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    width: 100%;
+    margin-top: 20px;
+}
+.loopt{
+    margin-left: 10vw;
+}
+
+.navigate{
+    display: flex;
+    flex-direction: column;
+    min-width:20%;
+   
+    background-color: rgb(29, 29, 80);
+    
+    
+
+}
+#toggle{
+display: none;
+}
+#toggle2{
+display: none;
+}
+.box1{
+    box-shadow: 0px 0px 100px 1px gray;
+    border-radius: 10px;
+}
+.box2{
+    box-shadow: 0px 0px 100px 1px gray;
+    border-radius: 10px;
+    overflow: scroll;
+}
+.label{
+}
+
+
+@media(max-width:720px){
+   
+    .box1{
+        margin-top: 20px;
+        width: 90vw;
+    }
+    #toggle2{
+        display:flex;
+        border-radius: 50%;
+        }
+
+    .h{
+        right: 10vw;
+        top: 5px;
+        width:60%;
+        
+    }
+    .loopt{
+        margin-left: 0vw;
+    }
+    .navigate{
+       
+        transform: translateX(-400px);
+        position: fixed; 
+        z-index: 0;
+        transition: .5s;
+
+    }
+    .navigateshow{
+       
+        transform: translateX(0px);
+        display: flex;
+        flex-direction: column;       
+         position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        background-color: rgb(29, 29, 80);
+        height: 100vh;
+        transition: .5s;
+        width: 55%;
+    }
+    #toggle{
+        display:block;
+        }
+        
+}

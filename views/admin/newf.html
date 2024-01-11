@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mbox{
+            width:500px;
+            height:300px;
+            margin: auto;
+
+        }
+        .mbox2{
+            width:500px;
+            height:300px;
+            margin: auto;
+            margin-top: 3cm;
+
+        }
+       .containerb{
+            width:400px;
+            height:300px;
+            border-left: 2px solid gray;
+            border-bottom: 2px solid gray;
+            display: flex;
+            align-items: flex-end;
+            gap: .5cm;
+            padding: 10px;
+            justify-content: space-around;
+        }
+       .containerb2{
+            width:400px;
+            height:300px;
+            border-left: 2px solid gray;
+            border-bottom: 2px solid gray;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: .5cm;
+            padding: 10px;
+        }
+        .bar{
+            width: 2cm;
+            position: relative;
+        }
+        .bar2{
+            height: 1cm;
+            position: relative;
+        }
+        .titles{
+            position: absolute;
+            bottom: -30px;
+        }
+        .titles2{
+            position: absolute;
+            left: -70px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mbox">
+        <h2 style="text-align: center;">performance</h2>
+        <div class="containerb">
+            <div class="bar" style="height: 60%; background-color: blueviolet;">
+            <span class="titles">englosh</span>
+            </div>
+            <div class="bar" style="height: 50%; background-color: rgb(170, 105, 231);">
+            <span class="titles">englosh</span>
+
+            </div>
+          
+        
+       </div>
+    </div>
+
+    <div class="mbox2">
+        <div class="containerb2">
+            <div class="bar2" style="width:60%; background-color: blueviolet;">
+            <span class="titles2">englosh</span>
+            </div>
+            <div class="bar2" style="width: 50%; background-color: rgb(170, 105, 231);">
+            <span class="titles2">englosh</span>
+
+            </div>
+            <div class="bar2" style="width: 40%; background-color: rgb(194, 156, 230);">
+                <span class="titles2">englosh</span>
+
+            </div>
+            <div class="bar2" style="width: 30%; background-color: rgb(216, 204, 228);">
+                <span class="titles2">englosh</span>
+
+            </div>
+        
+       </div>
+    </div>
+    
+</body>
+</html>
